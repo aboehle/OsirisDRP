@@ -133,7 +133,12 @@ int spatrectif_000(int argc, void* argv[])
 	    }
 	}
     }
-
+  fbv = fbasisv[1000][500];   // column 1000, lenslet 500
+  for (l=0; l<MAXSLICE; l++)
+    {
+      printf("%f",fbv[l]);
+    }
+  
   // Assigning weights for each blame function, by intergrating under the blame function
   for (sp=0; sp<numspec; sp++)
     {            
